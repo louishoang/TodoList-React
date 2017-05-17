@@ -1,0 +1,22 @@
+.App{
+	padding-top: 20px;
+}
+
+.new-todo-form{
+	margin-left: 100px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.filters{
+	margin-left: 100px;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.filter-link{
+	margin-right: 10px;
+	color: blue;
+	text-decoration: none;
+}
