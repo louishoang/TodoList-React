@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class TodoItem extends Component {
 	render(){
-		const { id, name, status, moveToComplete } = this.props.todo
+		const { id, name, status } = this.props.todo
 	
 		return(
 			<li>

@@ -14,7 +14,6 @@ class TodoList extends Component {
 			visibleFilter: 'Active'
 		}
 		this.addTodo = this.addTodo.bind(this)
-		this.input;
 	}
 
 	handleFilteringTodo = (e) => {
@@ -25,7 +24,7 @@ class TodoList extends Component {
 	}
 
 	addTodo = (string) => {
-		if(string != ''){
+		if(string !== ''){
 			var id = this.state.todos.length
 			this.state.todos.push({ id: id, name: string, status: 'Active' })
 			this.setState(prevState => (
@@ -35,11 +34,11 @@ class TodoList extends Component {
 	}
 
 	moveToComplete = (id) => {
-		if(id != ''){
+		if(id !== ''){
 			this.state.todos.map((item) => { 
-				if(item.id == id){
-					item.status = 'Completed'
-				};
+				if(item.id === id){
+					return item.status = 'Completed'
+				}
 			})
 
 			this.setState(prevState => (
